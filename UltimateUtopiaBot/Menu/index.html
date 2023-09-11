@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Utopia Bot</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="media/logo.png" alt="">
+        </div>
+        <div class="nav-bar">
+            <ul class="nav-links">
+                <li class="swipe-link"><a href="#"><img src="media/swiping-chat.png" alt="Swiping menu"></a></li>
+                <li class="chat-link"><a href="#"><img src="media/chatting-menu.png" alt="Chatting menu"></a></li>
+                <li class="swiping-hours-link"><a href="#"><img src="media/swiping-hours.png" alt="Swiping hours"></a></li>
+                <li class="scraping-link"><a href="#"><img src="media/scraping-menu.png" alt="Scraping menu"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content-container">
+        
+        <div class="chatting-menu-content">
+            <div class="chatting-menu-table-container">
+                <table class="chatting-menu-table">
+                    <tr>
+                        <td>Enable chatting</td>
+                        <td class="right-column"><div class="toggle-button"><div class="toggle-button-circle"></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Script chatting<br><span style="color: red;">(Maximum 25 characters)</span></td>
+                        <td class="right-column">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">Just moved into the city (new in the city)</span>
+                                    <div class="caret"></div>
+                                </div>
+                                <!--Dropdown menu choices-->
+                                <ul class="menu">
+                                    <li class="active">Just moved into the city (new in the city)</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Language<br><span style="color: red;">(This is your chat language)</span></td>
+                        <td class="right-column">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">English</span>
+                                    <div class="caret"></div>
+                                </div>
+                                <!--Dropdown menu choices-->
+                                <ul class="menu">
+                                    <li class="active">English</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chatting style<br><span style="color: red;">(Find wich style suits your model)</span></td>
+                        <td class="right-column">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">Teasing</span>
+                                    <div class="caret"></div>
+                                </div>
+                                <!--Dropdown menu choices-->
+                                <ul class="menu">
+                                    <li class="active">Teasing</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Preferred funnel method<br><span style="color: red;">(Platform the bot gives)</span></td>
+                        <td class="right-column">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">Instagram</span>
+                                    <div class="caret"></div>
+                                </div>
+                                <!--Dropdown menu choices-->
+                                <ul class="menu">
+                                    <li class="active">Instagram</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2nd funnel method<br><span style="color: red;">(A 2nd platform that the bot gives in case they don't have the first one)</span></td>
+                        <td class="right-column">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">Snapchat</span>
+                                    <div class="caret"></div>
+                                </div>
+                                <!--Dropdown menu choices-->
+                                <ul class="menu">
+                                    <li class="active">Snapchat</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="opening-line-only">
+                        <td style="padding-bottom: 0;">Opening line only</td>
+                        <td class="right-column"></td>
+                    </tr>
+                    <tr class="opening-line-only">
+                        <td style="color: grey; font-size: 16px;">Send only one message per conversation</td>
+                        <td class="right-column"><div class="toggle-button"><div class="toggle-button-circle"></div></div></td>
+                    </tr>
+                    <tr class="opening-line-only" style="border-bottom: solid white 5px;">
+                        <td style="color: grey; font-size: 16px;">Don't message conversations you have excluded</td>
+                        <td class="right-column"><div class="toggle-button"><div class="toggle-button-circle"></div></div></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding-bottom: 0;">Messages before sending the contact info</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="messages-input-td"><input type="number" id="messages-input-id" style="font-size: 28px; text-align: center;">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">messages</span>
+                                    <div class="caret" style="margin-left: 1rem;"></div>
+                                </div>
+                                <!--Dropdown menu choices-->
+                                <ul class="menu">
+                                    <li class="active">messages</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            
+        </div>
+
+        <div class="swiping-menu-content">
+            <div class="extension-row">
+                <span>Enable swiping</span>
+                <div class="toggle-button"><div class="toggle-button-circle"></div></div>
+            </div>
+            <div class="extension-row">
+                <span>Gender preferences:</span>
+            </div>
+            <div class="extension-row">
+                <button id="female-button">Female</button>
+                <button id="male-button">Male</button>
+                <button id="trans-button">Trans</button>
+            </div>
+            <div class="extension-row">
+                <span>Attractiveness range:</span>
+            </div>
+            <div class="extension-row">
+                <div class="wrapper">
+                    <div class="price-input">
+                      <div class="field">
+                        <span>Min</span>
+                        <input type="number" class="input-min" value="2">
+                      </div>
+                      <div class="separator">-</div>
+                      <div class="field">
+                        <span>Max</span>
+                        <input type="number" class="input-max" value="8">
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                      <input type="range" class="range-min" min="0" max="10" value="2" step="1">
+                      <input type="range" class="range-max" min="0" max="10" value="8" step="1">
+                    </div>
+                  </div>
+            </div>
+            <div class="extension-row">
+                <span>Judge attractiveness by the:</span>
+            </div>
+            <div class="extension-row">
+                <button id="ugliest-button">Ugliest photo</button>
+                <button id="hottest-button">Hottest photo</button>
+                <button id="average-button">Average of all photos</button>
+            </div>
+            <div class="extension-row">
+                <span>Weight preferences:</span>
+            </div>
+            <div class="extension-row">
+                <button id="thin-button">Thin</button>
+                <button id="chubby-button">Chubby</button>
+                <button id="fat-button">Fat</button>
+            </div>
+            <div class="extension-row">
+                <span>When they don't have pictures with them:</span>
+            </div>
+            <div class="extension-row">
+                <button id="left-button">Swipe LEFT</button>
+                <button id="right-button">Swipe RIGHT</button>
+                <button id="random-button">Random</button>
+            </div>
+            <div class="extension-row">
+                <span>Age range:</span>
+            </div>
+            <div class="extension-row">
+                <div class="wrapper">
+                    <div class="price-input2">
+                      <div class="field">
+                        <span>Min</span>
+                        <input type="number" class="input-min" value="18">
+                      </div>
+                      <div class="separator">-</div>
+                      <div class="field">
+                        <span>Max</span>
+                        <input type="number" class="input-max" value="100">
+                      </div>
+                    </div>
+                    <div class="slider2">
+                      <div class="progress2"></div>
+                    </div>
+                    <div class="range-input2">
+                      <input id="left-age-input" type="range" class="range-min" min="0" max="100" value="18" step="1">
+                      <input type="range" class="range-max" min="0" max="100" value="100" step="1">
+                    </div>
+                  </div>
+            </div>
+            <div class="extension-row">
+                <span>Swipe on Beeline</span>
+                <div class="toggle-button"><div class="toggle-button-circle"></div></div>
+            </div>
+            <div class="extension-row">
+                <span>Continue swiping when Beeline ends</span>
+                <div class="toggle-button"><div class="toggle-button-circle"></div></div>
+            </div>
+            <div class="extension-row">
+                <span>Swipe delay</span>
+            </div>
+            <div class="extension-row" style="margin-bottom: 2rem; justify-content: flex-start;">
+                <input type="number" id="delay-input-id" style="font-size: 28px; text-align: center; margin-right: 2rem;">
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">seconds</span>
+                        <div class="caret" style="margin-left: 1rem;"></div>
+                    </div>
+                    <!--Dropdown menu choices-->
+                    <ul class="menu">
+                        <li class="active">seconds</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiping-hours-menu-content">
+            <div class="extension-row">
+                <h3>Routine</h3>
+            </div>
+            <div class="extension-row" >
+                <label for="city-input">City:</label>
+                <label for="country-input">Country:</label>
+                <label for="hour-input">Hour:</label>
+            </div>
+            <div class="extension-row">
+                <input type="text" name="city-input" class="swiping-hours-input">
+                <input type="text" name="country-input" class="swiping-hours-input">
+                <input type="time" name="hour-input" class="swiping-hours-input">
+            </div>
+            <div class="extension-row" style="justify-content: flex-start;">
+                <label for="from-input-1" style="margin-right: 28vw;">From:</label>
+                <label for="until-input-1">Until:</label>
+            </div>
+            <div class="extension-row">
+                <input type="time" name="from-input-1" class="swiping-hours-input">
+                <input type="time" name="until-input-1" class="swiping-hours-input">
+                <div style="width: 30vw;"><div class="toggle-button"><div class="toggle-button-circle"></div></div></div>
+            </div>
+            <div class="extension-row" style="justify-content: flex-start;">
+                <label for="from-input-2" style="margin-right: 28vw;">From:</label>
+                <label for="until-input-2">Until:</label>
+            </div>
+            <div class="extension-row">
+                <input type="time" name="from-input-2" class="swiping-hours-input">
+                <input type="time" name="until-input-2" class="swiping-hours-input">
+                <div style="width: 30vw;"><div class="toggle-button"><div class="toggle-button-circle"></div></div></div>
+            </div>
+            <div class="extension-row" style="justify-content: flex-start;">
+                <label for="from-input-3" style="margin-right: 28vw;">From:</label>
+                <label for="until-input-3">Until:</label>
+            </div>
+            <div class="extension-row">
+                <input type="time" name="from-input-3" class="swiping-hours-input">
+                <input type="time" name="until-input-3" class="swiping-hours-input">
+                <div style="width: 30vw;"><div class="toggle-button"><div class="toggle-button-circle"></div></div></div>
+            </div>
+        </div>
+
+        <div class="scraping-menu-content" style="font-size: 28px;">
+            <div class="extension-row">
+                <h2>Bio scraping</h2>
+            </div>
+            <div class="extension-row">
+                <span>Platforms:</span>
+            </div>
+            <div class="extension-row">
+                <input type="text" class="swiping-hours-input">
+                <div class="toggle-button"><div class="toggle-button-circle"></div></div>
+            </div>
+            <div class="extension-row">
+                <input type="text" class="swiping-hours-input">
+                <div class="toggle-button"><div class="toggle-button-circle"></div></div>
+            </div>
+            <div class="extension-row">
+                <span>Bio support</span>
+                <div class="toggle-button"><div class="toggle-button-circle"></div></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
